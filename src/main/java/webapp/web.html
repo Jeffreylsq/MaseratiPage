@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	margin: 0;
+	background-color: #f5f5f5;
+	color: #000000;
+	font-family: "Univers47", sans-serif;
+}
+
+header {
+	width: "100%";
+	height: 77px;
+	background-color: white;
+	overflow: hidden;
+}
+
+header img, #h1 {
+	float: left;
+}
+
+header div a img {
+	width: 104px;
+	height: 55px;
+	margin: 0 15px 0 35px;
+}
+
+header div a {
+	display: block;
+	margin: 10px 0px 10px 20px;
+	vertical-alig: middle;
+	text-decoration: none;
+	font-size: 12px;
+	color: #333333;
+	font-family: "Univers47", sans-serif;
+	text-align: center;
+}
+
+header  h3 {
+	margin-left: 10px;
+	margin-top: 12px;
+}
+
+#h2, #h3 {
+	float: right;
+	margin: 0 auto;
+	padding: 0 20px 0 5px;
+	display: inline-block;
+	height: 77px;
+}
+
+#h3 {
+	background-color: #0B0B61;
+}
+
+#h3>a {
+	color: #ffffff;
+	font-size: 10px;
+}
+
+#h2 {
+	background-color: #f5f5f5;
+	font-size: .75em;
+	line-height: 1.14;
+}
+
+#h2>a {
+	font-size: 10px;
+}
+
+article {
+	overflow: hidden;
+	width: "100%";
+	height: 3550px;
+}
+
+#d3 {
+	background-image: url("../imgs/1.jpg");
+	background-size: 1280px 690px;
+	height: 600px;
+	overflow: hidden;
+	padding: 70px 0 20px 50px;
+}
+
+#a1 {
+	font-family: simsun, "Courier New" '
+    margin-bottom : 6px;
+	font-size: 30px;
+	width: 360px;
+	color: white;
+}
+
+#a2 {
+	font-size: 20px;
+	letter-spacing: -.02em;
+	line-height: 1.4;
+	margin-bottom: 6px;
+	width: 360px;
+	color: white;
+}
+
+#d1 {
+	font-size: 20px;
+	letter-spacing: -.02em;
+	line-height: 1.4;
+	margin-bottom: 6px;
+	width: 360px;
+	color: white;
+}
+
+input[type='submit'] {
+	width: 135px;
+	height: 35px;
+	border: 0;
+	margin: 50px 0 0 0;
+	padding: 5px 10px 5px 10px;
+	background-color: white;
+}
+
+#d2 {
+	height: 50px;
+	background-color: #f5f5f5;
+	padding: 25px 100px 25px 75px;
+}
+
+#s1 {
+	font-size: 35px;
+	margin: 0 50px 0 2px;
+}
+
+#car1 {
+	float: left;
+	width: 600px;
+	height: 350px;
+	padding: 5px 10px 10px 15px;
+	margin: 2px;
+	background-color: white;
+}
+
+#car1>h2 {
+	font-family: "Univers45", sans-serif;
+	font-size: 25px;
+	letter-spacing: -.02em;
+	line-height: 1.2;
+	color: #333;
+}
+
+#car1>p {
+	font-size: 12px;
+}
+
+#c1p1 {
+	float: left;
+	margin-right: 45px;
+}
+
+#img1 {
+	float: left;
+	width: 280.67px;
+	height: 150.63px;
+}
+
+#c1p2 {
+	margin: 10px;
+	font-size: 12px;
+}
+
+#c1p3 {
+	float: left;
+}
+
+#c1i1, #c1i2 {
+	float: left;
+	font-size: 12px;
+	color: black;
+	border: 0;
+	width: 120px;
+	height: 30px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#c1i1 {
+	background-color: #000080;
+	color: white;
+}
+
+/*  car 2*/
+#car2 {
+	float: left;
+	width: 600px;
+	height: 350px;
+	padding: 5px 10px 10px 15px;
+	margin: 2px;
+	background-color: white;
+}
+
+#car2>h2 {
+	font-family: "Univers45", sans-serif;
+	font-size: 25px;
+	letter-spacing: -.02em;
+	line-height: 1.2;
+	color: #333;
+}
+
+#car2>p {
+	font-size: 12px;
+}
+
+#c2p1 {
+	float: left;
+	margin-right: 10px;
+}
+
+#img2 {
+	float: left;
+	width: 280.67px;
+	height: 150.63px;
+}
+
+#c2p2 {
+	margin: 10px;
+	font-size: 12px;
+}
+
+#c2p3 {
+	float: left;
+}
+
+#c2i1, #c2i2 {
+	float: left;
+	font-size: 12px;
+	color: black;
+	border: 0;
+	width: 120px;
+	height: 30px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#c2i1 {
+	background-color: #000080;
+	color: white;
+}
+
+/* car3-------------------------------------------- */
+#car3 {
+	float: left;
+	width: 600px;
+	height: 350px;
+	padding: 5px 10px 10px 15px;
+	margin: 2px;
+	background-color: white;
+}
+
+#car3>h2 {
+	font-family: "Univers45", sans-serif;
+	font-size: 25px;
+	letter-spacing: -.02em;
+	line-height: 1.2;
+	color: #333;
+}
+
+#car3>p {
+	font-size: 12px;
+}
+
+#c3p1 {
+	float: left;
+	margin-right: 15px;
+}
+
+#img3 {
+	float: left;
+	width: 280.67px;
+	height: 150.63px;
+}
+
+#c3p2 {
+	margin: 10px;
+	font-size: 12px;
+}
+
+#c3p3 {
+	float: left;
+}
+
+#c3i1, #c3i2 {
+	float: left;
+	font-size: 12px;
+	color: black;
+	border: 0;
+	width: 120px;
+	height: 30px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#c3i1 {
+	background-color: #000080;
+	color: white;
+}
+/* car 4--------------------------------------- */
+#car4 {
+	float: left;
+	width: 600px;
+	height: 350px;
+	padding: 5px 10px 10px 15px;
+	margin: 2px;
+	background-color: white;
+}
+
+#car4>h2 {
+	font-family: "Univers45", sans-serif;
+	font-size: 25px;
+	letter-spacing: -.02em;
+	line-height: 1.2;
+	color: #333;
+}
+
+#car4>p {
+	font-size: 12px;
+}
+
+#c4p1 {
+	float: left;
+	margin-right: 10px;
+}
+
+#img4 {
+	float: left;
+	width: 280.67px;
+	height: 150.63px;
+}
+
+#c4p2 {
+	margin: 10px;
+	font-size: 12px;
+}
+
+#c4p3 {
+	float: left;
+}
+
+#c4i1, #c4i2 {
+	float: left;
+	font-size: 12px;
+	color: black;
+	border: 0;
+	width: 120px;
+	height: 30px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#c4i1 {
+	background-color: #000080;
+	color: white;
+}
+
+/*car5----------------  */
+#car6 {
+	float: left;
+	width: 600px;
+	height: 350px;
+	padding: 5px 10px 10px 15px;
+	margin: 2px;
+	background-color: white;
+}
+
+#car6>h2 {
+	font-family: "Univers45", sans-serif;
+	font-size: 25px;
+	letter-spacing: -.02em;
+	line-height: 1.2;
+	color: #333;
+}
+
+#car6>p {
+	font-size: 12px;
+}
+
+#c6p1 {
+	float: left;
+	margin-right: 25px;
+}
+
+#img6 {
+	float: left;
+	width: 280.67px;
+	height: 150.63px;
+}
+
+#c6p2 {
+	margin: 10px;
+	font-size: 12px;
+}
+
+#c6p3 {
+	float: left;
+}
+
+#c6i1, #c6i2 {
+	float: left;
+	font-size: 12px;
+	color: black;
+	border: 0;
+	width: 120px;
+	height: 30px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#c6i1 {
+	background-color: #000080;
+	color: white;
+}
+
+/* car 6---------------- */
+#car5 {
+	float: left;
+	width: 600px;
+	height: 350px;
+	padding: 5px 10px 10px 15px;
+	margin: 2px;
+	background-color: white;
+}
+
+#car5>h2 {
+	font-family: "Univers45", sans-serif;
+	font-size: 25px;
+	letter-spacing: -.02em;
+	line-height: 1.2;
+	color: #333;
+}
+
+#car5>p {
+	font-size: 12px;
+}
+
+#c5p1 {
+	float: left;
+	margin-right: 25px;
+}
+
+#img5 {
+	float: left;
+	width: 280.67px;
+	height: 150.63px;
+}
+
+#c5p2 {
+	margin: 10px;
+	font-size: 12px;
+}
+
+#c5p3 {
+	float: left;
+}
+
+#c5i1, #c5i2 {
+	float: left;
+	font-size: 12px;
+	color: black;
+	border: 0;
+	width: 120px;
+	height: 30px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#c5i1 {
+	background-color: #000080;
+	color: white;
+}
+
+#d7 {
+	float: left;
+	width: 1280px;
+	height: 460px;
+	background-color: white;
+	margin-top: 35px;
+}
+
+#d7>p {
+	font-size: 35px;
+	margin-left: 40px;
+	border: 0;
+}
+
+#da1>img, #da2>img, #da3>img {
+	width: 255.67px;
+	height: 259.83px;
+	margin: 20px 40px 0 40px;
+}
+
+#byo {
+	float: left; width : 1280px;
+	height: 143px;
+	margin: 35px 0 0 0;
+	width: 1280px;
+}
+
+#byo>h2 {
+	float: left;
+	font-size: 30px;
+	margin: 40px;
+}
+
+#byo>div {
+	float: left;
+	font-size: 18px;
+	margin: 25px 40px 0 40px;
+}
+
+#si {
+	float: left;
+	width: 1280px; height : 205px;
+	background-color: #f5f5f5;
+	height: 205px;
+}
+
+#si> div{
+
+    width: 199px;
+	height: 197px;
+	float: left;
+	background-color:white;
+	text-align:center;
+	margin:10px 20px 10px 20px;
+}
+
+#si >div > input{
+    position:botton;
+    margin-top:100px;
+    height:28px;
+    width:106px;
+    background-color:white;
+    border-radius:3px;
+    
+}
+#sm1 {
+	
+	background-color:white;
+	background-image: url("../imgs/d1.jpg");
+	background-size: 139px 70px;
+	background-repeat:no-repeat;
+	background-position: 69.5% 50%;
+	
+}
+
+#sm2 {
+	
+	background-image: url("../imgs/d2.jpg");
+	background-size: 139px 70px;
+	background-repeat:no-repeat;
+	background-position: 69.5% 50%;
+}
+
+#sm3 {
+ 
+	background-image: url("../imgs/d3.jpg");
+	background-size: 139px 70px;
+	background-repeat:no-repeat;
+	background-position: 69.5% 50%;
+	
+}
+
+#sm4 {
+  
+	background-image: url("../imgs/d4.jpg");
+	background-size: 139px 70px;
+	background-repeat:no-repeat;
+	background-position: 69.5% 50%;
+}
+
+#sm5 {
+  
+	background-image: url("../imgs/d5.jpg");
+	background-size: 139px 70px;
+	background-repeat:no-repeat;
+	background-position: 69.5% 50%;
+	
+}
+
+
+#last{
+  float:left;
+  width: 1090px;
+  height:220px;
+  background-color:#f5f5f5;
+  margin:30px 0 10px 0 ;
+  position:relative;
+}
+
+#last > p{
+   text-align:center;
+}
+
+input[type = 'text']{
+   margin:10px 0 0 350px ;
+   width:300px;
+   height:30px;
+   padding:5px 10px 5px 45px;
+   
+   
+}
+
+#ls{
+   width:100px;
+   height:45px;
+   background-color:#0B0B61;
+   color:white;
+   cursor:pointer;
+   border:0;
+   
+   
+   
+}
+#last>img{
+  position:absolute;
+  bottom:95px;
+  left:351px;
+}
+
+
+#bd{
+ float:left;
+ width:1290px;
+ height:530px;
+ background-color:#272727;
+ position:relative;
+}
+
+#bd > ul {
+
+ float:left;
+  margin:60px 256px 0px 50px;
+  color:white;
+  font-size:12px;
+  list-style:none;
+}
+#bd > ul >li > a{
+ text-decoration:none;
+ color:white;
+ display:block;
+ margin-top:10px;
+ 
+}
+#plist{
+  list-style:none;
+  margin:60px 286px 0px 400px;
+ 
+}
+#plist>li{
+float:left;
+display:inline-block;
+ margin:0 10px 0 10px ;
+  
+  
+}
+
+#plist>li>img{
+  width:30px;
+  height:30px;
+}
+
+#lastF{
+   width:335px;
+   height:24px;
+   
+   
+}
+#lastB{
+   width:100px;
+   height:45px;
+   background-color:#0B0B61;
+   color:white;
+   cursor:pointer;
+   border:0;
+   margin-right:200px;
+   border-radius:3px;
+   
+}
+#lastP{
+   margin:10px 0 40px 400px;
+}
+#lastP > span >a{
+   text-decoration:none;
+   color:white;
+   margin:5px 15px 0 10px ;
+   font-size:12px;
+
+}
+
+#BP1,#BP2{
+   font-size:11px;
+   margin:25px 20px 10px 85px;
+   color:white;
+}
+</style>
+</head>
+<body>
+	<header>
+		<div>
+			<a href="#"><img src="../imgs/mase.png"></a>
+			<h3 id="h1">
+				<a href="#">MODELS</a>
+			</h3>
+			<h3 id="h1">
+				<a href="#">SHOPPING TOOLS</a>
+			</h3>
+			<h3 id="h1">
+				<a href="#">CURRENT OFFERS</a>
+			</h3>
+			<h3 id="h1">
+				<a href="#">FIND A DEALER</a>
+			</h3>
+			<h3 id="h1">
+				<a href="#">PRE-OWENED</a>
+			</h3>
+			<h3 id="h1">
+				<a href="#">OWNERSHIP</a>
+			</h3>
+			<h3 id="h1">
+				<a href="#">BRAND</a>
+			</h3>
+
+			<h3 id="h3">
+				<a href="#">BUILDER <br>YOUR<br> OWN
+				</a>
+			</h3>
+			<h3 id="h2">
+				<a href="#">SEARCH <br>NEW<br> INVENTORY
+				</a>
+			</h3>
+
+		</div>
+	</header>
+	<article>
+		<div id="d3">
+			<div>
+				<h3 id="a1">
+					The Absolute Opposite <br>of Ordinary
+				</h3>
+			</div>
+			<div id="d1">Lease a 2019 Maserati Ghibli</div>
+			<div id="d1">
+				<h3 id="a2">$795 per month for 36 months</h3>
+				$5999 total due at signing. <br>No security deposit required <br>
+				<input type="submit" value="DISCOVER GHIBLI">
+			</div>
+		</div>
+
+		<div id="d2">
+			<span id="s1">Models</span> <span id="s2">Constructed with the
+				utmost attention to detail, every Maserati is a true masterpiece of
+				Italian design.</span>
+		</div>
+
+		<div id="car1">
+			<h2>Ghibli</h2>
+			<p>
+				THE ABSOLUTE OPPOSITE OF<br> ORDINARY.
+			</p>
+			<p id="c1p1">
+				A masterful combination of style, power,<br> sporty handling
+				and comfort in a luxury<br> sport sedan.
+			</p>
+			<img id="img1" alt="" src="../imgs/car1.jpg">
+			<p id="c1p2">Starting from*</p>
+			<p id="c1p2">$75,480</p>
+			<input id="c1i1" type="button" value="BUILD YOUR OWN"> <input
+				id="c1i2" type="button" value="DISCOVER MORE">
+
+		</div>
+
+
+		<div id="car2">
+			<h2>Levante</h2>
+			<p>THE MASERATI OF SUVs</p>
+			<p id="c2p1">
+				The ultimate combination of leading on-road <br> performance
+				and off-road capabilities in a Maserati <br>SUV.
+			</p>
+			<img id="img2" alt="" src="../imgs/car2.jpg">
+			<p id="c2p2">Starting from*</p>
+			<p id="c2p2">$76,980</p>
+			<input id="c2i1" type="button" value="BUILD YOUR OWN"> <input
+				id="c2i2" type="button" value="DISCOVER MORE">
+
+
+
+		</div>
+		<div id="car3">
+
+			<h2>Quattroporte</h2>
+			<p>
+				THE ORIGINAL RACE-BRED LUXURY <br>SEDAN.
+			</p>
+			<p id="c3p1">
+				A captivating blend of race-bred performance and <br>sophisticated
+				style in a luxury sedan.
+			</p>
+			<img id="img3" alt="" src="../imgs/car3.jpg">
+			<p id="c3p2">Starting from*</p>
+			<p id="c3p2">$107,980</p>
+			<input id="c3i1" type="button" value="BUILD YOUR OWN"> <input
+				id="c3i2" type="button" value="DISCOVER MORE">
+		</div>
+
+
+		<div id="car4">
+			<h2>GranTurismo</h2>
+			<p>THE PUREST FORM OF EXCITEMENT.</p>
+			<p id="c4p1">
+				The epitome of grand touring, a sport coupe that <br>combines
+				power and luxury in equal measure.
+			</p>
+			<img id="img4" alt="" src="../imgs/car4.jpg">
+			<p id="c4p2">Starting from*</p>
+			<p id="c4p2">$107,980</p>
+			<input id="c4i1" type="button" value="BUILD YOUR OWN"> <input
+				id="c4i2" type="button" value="DISCOVER MORE">
+
+		</div>
+		<div id="car5">
+			<h2>GT Convertible</h2>
+			<p>
+				THE PUREST FORM OF EXCITEMENT.<br>OPEN.
+			</p>
+			<p id="c5p1">
+				The luxury convertible that fuses powerful <br>performance with
+				open-air exhilaration.
+			</p>
+			<img id="img5" alt="" src="../imgs/car5.jpg">
+			<p id="c5p2">Starting from*</p>
+			<p id="c5p2">$150,980</p>
+			<input id="c5i1" type="button" value="BUILD YOUR OWN"> <input
+				id="c5i2" type="button" value="DISCOVER MORE">
+
+		</div>
+		<div id="car6">
+			<h2>GranTurismo Convertible Sport</h2>
+			<p>
+				THE PUREST FORM OF EXCITEMENT.<br>OPEN.
+			</p>
+			<p id="c6p1">The luxury convertible that fuses powerful</p>
+			<img id="img6" alt="" src="../imgs/car6.jpg">
+			<p id="c6p2">Starting from*</p>
+			<p id="c6p2">$150,980</p>
+			<input id="c6i1" type="button" value="BUILD YOUR OWN"> <input
+				id="c6i2" type="button" value="DISCOVER MORE">
+
+		</div>
+
+
+		<div id="d7">
+			<p>The World of Maserati</p>
+			<a id="da1" href="#"><img src="../imgs/w1.png"></a> <a id="da2"
+				href="#"><img src="../imgs/w2.png"></a> <a id="da3" href="#"><img
+				src="../imgs/w3.png"></a>
+
+
+		</div>
+
+		<div id="byo">
+			<h2>Build Your Own</h2>
+			<div>
+				Every Maserati is like a work of art constructed with the care and
+				attention that <br> only the human hand can provide. Commission
+				your very own Maserati <br>and customize it to fit your needs.
+			</div>
+
+		</div>
+
+
+		<div id="si">
+
+			<div id="sm1">
+				<p>Ghibli</p>
+				<input type="button" value="SELECT">
+			</div>
+
+			<div id="sm2">
+				<p>Levante</p>
+				<input type="button" value="SELECT">
+			</div>
+
+			<div id="sm3">
+				<p>Quattroporte</p>
+				<input type="button" value="SELECT">
+			</div>
+
+			<div id="sm4">
+				<p>Gran Turismo</p>
+				<input type="button" value="SELECT">
+			</div>
+
+			<div id="sm5">
+				<p>GT Convertible</p>
+				<input type="button" value="SELECT">
+			</div>
+		</div>
+<div id = "last">
+ <p>Open an existing configuration.<br>
+Access to your own Maserati using your unique configuration ID.</p>
+<input type = "text" placeholder = "Enter the Configuration Code">
+<input id = "ls" type = "button" value = "Load">
+<img src = "../imgs/pp.png">
+
+</div>
+
+<div id = "bd">
+<ul id = "list1">
+  <li><a href = "#">Ghibli</a></li>
+  <li><a href = "#">Levante</a></li>
+  <li><a href = "#">Quattroporte</a></li>
+  <li><a href = "#">GranTurismo</a></li>
+  <li><a href = "#">GT Convertible</a></li>
+
+</ul>
+
+<ul id = "list2">
+  <li><a href = "#">Brand</a></li>
+  <li><a href = "#">Ownership</a></li>
+  <li><a href = "#">Pre-Owned</a></li>
+  <li><a href = "#">Bluetooth</a></li>
+
+</ul>
+
+
+<ul id = "list3">
+  <li><a href = "#">Contact Us</a></li>
+  <li><a href = "#">Stay in Touch</a></li>
+  <li><a href = "#">Media</a></li>
+  <li><a href = "#">Bluetooth</a></li>
+  
+  <li><a href = "#">Recall by VIN</a></li>
+  <li><a href = "#">Disclaimers</a></li>
+  <li><a href = "#">Location Selector</a></li>
+
+</ul >
+
+<ol id = "plist">
+ <li><img id = "sp1" src = "../imgs/p1.png"></li>
+ <li><img id = "sp2" src = "../imgs/p2.png"></li>
+<li><img id = "sp3" src = "../imgs/p3.png"></li>
+<li><img id = "sp4" src = "../imgs/p4.png"></li>
+<li><img id = "sp5" src = "../imgs/p5.png"></li>
+
+</ol>
+
+<input id = "lastF" type = "text">
+<input id = "lastB" type = "button" value = "SEARCH">
+<p id = "lastP"><span id = "span1"><a href = "#">Legal Notes</a></span>
+<span id = "span2"><a href = "#">Cookie Policy</a></span>
+<span id = "span3"><a href = "#">Location Selector</a></span></p>
+
+	<p id = "BP1">© 2019 Maserati North America, Inc. All rights reserved. Maserati and the Trident logo are registered trademarks of Maserati SpA.</p>
+    <p id = "BP2">Maserati North America strives to ensure that its website is accessible to individuals with disabilities. Should you encounter an issue accessing any content on MaseratiUSA.com, please contact our Customer 
+<br>Service Team at MyMaserati@Maserati.com or 1-877-MY-MASERATI (877-696-2737), for further assistance or to report a problem. Access to MaseratiUSA.com is subject to Maserati North America, Inc. Privacy 
+<br>Policy and Terms of Use.</p>
+
+</div>
+
+
+	</article>
+
+
+
+</body>
+</html>
